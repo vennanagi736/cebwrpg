@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>online shop</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: rgb(214, 216, 216);
+    }
+    h1 {
+      text-align: center;
+    }
+    .onlineshop {
+      max-width: 800px;
+      background-color: rgb(249, 252, 252);
+      margin: 10px auto;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 gray;
+    }
+    .productrow {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid black;
+      padding: 10px;
+      border-radius: 5px;
+      align-items: center;
+      margin: 10px 0;
+    }
+    button {
+      background-color: rgb(105, 105, 242);
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: rgb(30, 30, 180);
+    }
+    h2 {
+      margin: 10px 0;
+    }
+    #feedback {
+      position: fixed;
+        top: 10px;
+        right: 100px;
+        background-color: rgb(14, 222, 25);
+        padding: 10px;
+        border: 1px solid black;
+        display: none ;
+      
+    }
+    #total {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+  <body>
+    <div class="onlineshop">
+      <h1>online shopping</h1>
+      <p id="feedback"></p>
+      <h2>available Products</h2>
+      <div class="productcontainer" id="productcontainer">
+        
+      </div>
+      <h2>my cart</h2>
+      <div class="cartcontainer" id="cartcontainer"> 
+
+      </div>
+      <p id="total"></p>
+      <h2>actions</h2>
+      <button onclick="sortmyprice()">sort by price</button>
+      <button onclick="clearCart()">Clear Cart</button>
+
+    </div>
+    
+    <script src="onlineshopping.js"></script>
+  </body>
+</html>
